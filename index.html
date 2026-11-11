@@ -15,7 +15,7 @@
         <ul>
             <li>3 separate configurable lessons to easily add variety to your training</li>
             <li>Total flexiblity in setting up lesson format</li>
-            <li>Smart randomization, random characters or file sets of 5 or more avoid nearby repeats and train the whole set within 50% of length</li>
+            <li>Smart randomization, random characters or file sets of 5 or more avoid repeating an item played recently and train the whole set within 50% of set length</li>
             <li>Listen mode avoids repeating or waiting for spoken results on correctly copied results</li>
             <li>Flexible regular expression for generating endlessly variable call signs and QSO messages</li>
             <li>Choose which characters to practice, including which characters from dictionary lookup</li>
@@ -33,11 +33,11 @@
             <li>1 - element space</li>
             <li>3 - character space</li>
             <li>7 - word space</li></p>
-        <p>What else should you notice about this diagram? First, the length of the characters varies in width. Sometimes even much more so than shown in this diagram. An E is only 4 dot lengths total, 1 for the dot and 3 for the character space. A 0 (zero) is 22 dot lengths in total, but this is about as long as they get. To make Morse code faster, in general the more common the character, the shorter they are. The other thing you may notice is that the tone always starts on an even dot timing and ends on an odd dot timing. This creates an odd rhythm structure that only a fan of the band Rush can appreciate.</p>
-        <p>Finally there just isn't much time between the characters. At 20 WPM, there is only 180ms between the last character and the next to comprehend it. It's actually worse than that, since you only realize the current character is over once the space has already ended. Then you need to recognize the character instantly, or overlap recognizing with hearing the next character, you simply can't be using any mental tricks either verbal or visual to recognize the character. There simply isn't the mental bandwidth to allow for it.</p>
+        <p>What else should you notice about this diagram? First, the length of the characters varies in width. Sometimes even much more so than shown in this diagram. An E is only 4 dot lengths total, 1 for the dot and 3 for the character space. A 0 (zero) is 22 dot lengths in total, but this is as long as they get. To make Morse code faster, in general the more common the character, the shorter they are. The other thing you may notice is that the tone always starts on an even dot timing and ends on an odd dot timing. This creates an odd rhythm structure that only a fan of the band Rush can appreciate.</p>
+        <p>Finally there just isn't much time between the characters. At 20 WPM, there is only 180ms between the last character and the next to comprehend it. It's actually worse than that, since you only realize the current character is over once at least half that time has passed. Then you need to recognize the character near instantly, or overlap recognizing while hearing the next character, you simply can't be using any mental tricks either verbal or visual to recognize the character. There simply isn't the time or mental bandwidth to allow for it.</p>
         <p>Farnsworth timing is a learning hack to give you more time to process the character. It stretches out the time between characters (3 dots) and words (7 dots) to give you time to comprehend the character just sent. It also is expressed in WPM and is always smaller than the character WPM. Don't allow yourself to use this extra time to use mental tricks. If you find yourself falling in this trap, use one of the repeat modes in the app to resend the character and give your brain another crack at it. Remember to increase Farnsworth speed as you learn so you can get to comprehending at full speed.</p>
         <h3>Morse Code Table</h3>
-        <p>The following Morse code table will be helpful eventually later when learning to send Morse code or occasional reference when having trouble. For example, I had trouble hearing the difference between C and Y. That final dot or dash is hard for me to distinguish for some reason. But again concentrate on the sound and not the visual form.</p>
+        <p>The following Morse code table will be helpful eventually later when learning to send Morse code or occasional reference when having trouble. For example, I had trouble hearing the difference between C and Y. That final dot or dash is hard for me to distinguish and I had to see the diference to believe it. But again concentrate on the sound and not the visual form.</p>
         <table>
           <tbody>
             <tr>
@@ -74,7 +74,7 @@
               <td>&mdash;&thinsp;&mdash;</td>
               <td></td>
               <td>W</td>
-              <td>-&thinsp;&mdash;&mdash;</td>
+              <td>-&thinsp;&mdash;&thinsp;&mdash;</td>
               <td></td>
               <td>2</td>
               <td>-&thinsp;-&thinsp;&mdash;&thinsp;&mdash;&thinsp;&mdash;</td>
@@ -247,17 +247,47 @@ Otherwise unless the right answer is supplied, it will jump back to the top and 
     </details>
     
     <details>
+        <summary><h2 style="display: inline-block;">Learning</h2></summary>
+        <h3>Learning the characters</h3>
+        <p>The standard way to learn the characters is the Koch method. Start with 2 characters at high speed (at least 20 WPM) and once you can recognize them with 90% accuracy, add another character. The problem with this is you end up doing a lot more training with the first few characters then later characters. To optimize your time, an alternative strategy is to learn a few characters at a time and add them to your learned character set.</p>
+        <p>In the app, start by selecting 3 characters, R, E, A. Train on these until you're 90% accurate. Then try them in character groups of 2 or 3 until 90% accurate.</p>
+        <p>Add T, I, N. But emphasize these characters in character set, and at 100% in the lsesson so you just train on these characters. Train on these until you're 90% accurate. Then try them in character groups of 2 or 3 until 90% accurate.</p>
+        <p>Move the empahsis slider to about 50% and train again until 90% accurate.</p>
+        <p>Continue adding characters as follows between inital learning and integrating them into the larger set as follows:
+        <ul>
+        <li>R E A</li>
+        <li>T I N</li>
+        <li>P S G</li>
+        <li>L C D</li>
+        <li>H O F</li>
+        <li>U W B</li>
+        <li>K M Y</li>
+        <li>5 9 ,</li>
+        <li>Q X Y</li>
+        <li>7 3 ?</li>
+        <li>1 6 .</li>
+        <li>Z J /</li>
+        <li>2 8 4</li>
+        <li>0</li>
+        </ul>
+        <p>This order is from the Long Island CW Club. Research has shown the exact order isn't critical, feel free to rearrange these if you like.</p>
+        <h3>Copying words</h3>
+        <p>Alternate between the random groups and adding more characters for more variety to your lessons once you've mastered the first dozen characters..</p>
+       <p>Choose lesson 2 or 3, set Practice to Top 5000 Words. Make the word length somewhat short, for example 2 to 4 characters. You may want to adjust the Comprehend delay to be a bit longer. Notice how you have 200 possible random words as shown on the bottom.<\p>
+     </details>
+        
+    <details>
         <summary><h2 style="display: inline-block;">Regular Expressions</h2></summary>
         <p>Regular expressions are a concept traditionally used by programmers when searching for text. It's been modified here to allow for creating random callsigns or phrases. You can edit the existing files or copy and paste specific lines into a new file for training if you don't want to learn the details.</p>
-        <p>The core of a regex is the character class, [ABC] or [A-C] which return a single character, either A, B or C.
-        <p>By using multiple character classes a call sign can be created <code>[KNW][0-9][A-Z][A-Z]</code> A random leter K, N or W from [KNW], a random digit from [0-9] and two more random letters.</p>
+        <p>The core of a regex is the character class, [ABC] or [A-C] which randomly returns a single character, either A, B or C.
+        <p>By using multiple character classes a call sign can be created <code>[KNW][0-9][A-Z][A-Z]</code> Will combine a random leter K, N or W from [KNW], a random digit from [0-9] and two more random letters.</p>
         <p>To add a varying number of random letters use the quantifier {low,high}. <code>[KNW][0-9][A-Z]{1,3}</code> produces a call sign with 1 to 3 suffix letters. The {1,3} is repeats the previous character, [set] or (group) 1 to 3 times.</p>
         <p>Here is a more complex regex example that adds the A prefix <code>(K|N|W|(A[A-L]))[0-9][A-Z]{1,3}</code> The parentheses creates a group to select. The | randomly chooses either side.</p>
-        <p>There is usually more than one way to do the same thing. For example <code>G[MAE]</code> or <code>(GM|GA|GE)</code> or <code>G(M|A|E)</code> all produce the same results of one of GM, GA or GE.</p>
-        <p>It's also important to remember a random choice is made at each branch of a random path. Either at the | or inside each []. For example <code>(K|N|W|(A[A-L]))</code> will have about 25% K, N, W and A, with the A followed by a random letter from A to L. But <code>([KNW]|(A[A-L]))</code> will have 17% of K, N or W. And 50% starting with an A.</p>
+        <p>There is usually more than one way to do the same thing. For example <code>G[MAE]</code> or <code>(GM|GA|GE)</code> or <code>G(M|A|E)</code> all produce the same results, one of GM, GA or GE.</p>
+        <p>It's also important to remember a random choice is made at each branch of a random path. Either at the | or inside each []. For example <code>(K|N|W|(A[A-L]))</code> will have about 25% K, N, W and A, with the A followed by a random letter from A to L. But <code>([KNW]|(A[A-L]))</code> will have 17% of K, N or W. And 50% starting with an A because the | is selected first.</p>
         <p>For optional items (FB ){0,1} will only show FB 50% of the time. (FB ||) will show a FB 33% of the time.
-        <p>An advanced feature is back-referencing. Each top level group () can be repeated later with a \1 to \9 where \1 refers to the first group. This can be used for repeating items in a message such as call signs.</p>
-        <p>For those already familiar with regular expressions the following are not supported:
+        <p>An advanced feature is back-referencing. Each top level group () can be repeated later with a \1 to \9 where \1 refers to the first group. This can be used for repeating items in a message such as call signs like so: <code>([KNW][0-9][A-Z]{1,3}) \1 DE ([KNW][0-9][A-Z]{1,3}) \2 K</code></p>
+        <p>For those already familiar with regular expressions the following are not supported for <i>reasons</i>:
         <ul>
             <li style="display: grid; grid-template-columns:70px 1fr; margin-bottom: 4px;"><span>. * + [^]</span><span>All are too indefinite for creating random strings.</span></li>
             <li style="display: grid; grid-template-columns:70px 1fr; margin-bottom: 4px;"><span>?</span><span>Was skipped to avoid having to wrap it as [?] when needed as a literal.</span></li>

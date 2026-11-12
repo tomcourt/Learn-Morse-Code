@@ -17,7 +17,8 @@
             <li>3 separate configurable lessons to easily add variety to your training</li>
             <li>Total flexiblity in setting up lesson format</li>
             <li>Smart randomization, random characters or file sets of 5 or more avoid repeating an item played recently and train the whole set within 50% of set length</li>
-            <li>Listen mode avoids repeating or waiting for spoken results on correctly copied results</li>
+            <li>Listen mode avoids repeating or waiting for spoken results or a replay on correctly copied results</li>
+            <li>Listen mode compensates for poor speech recognition, due to lack of context with random words, by using a fuzzy matching alorithm</li>
             <li>Flexible regular expression for generating endlessly variable call signs and QSO messages</li>
             <li>Choose which characters to practice, including which characters from dictionary lookup</li>
             <li>Choose which characters to emphasize for extra practice</li>
@@ -27,7 +28,7 @@
         <summary><h2 style="display: inline-block;">Morse Code</h3></summary>
         <p>A little knowledge of Morse code structure can be helpful in understanding what you are hearing as well as what the settings for the lessons are doing. But just like how you don't diagram sentences when talking, you want to concentrate on the sound rather than the structure so the Morse code becomes natural. Here is an example of the short phrase "PARIS FR"
         <img src="timing.png" width="100%">
-        <p>The basic unit time is the dot time, shown as ticks in the diagram. The word PARIS (50 total dot times including the word space) is used as the formal definition for the relationship between dot time and WPM (words per minute). Dot time in ms is 1200/WPM. So for 20 WPM the dot time is 60ms. Why 20 WPM? Because that's about as slow as you want to practice Morse code. Any slower and you'll try to break it apart, counting dots and dashes and you'll never achieve instant character recognition.</p
+        <p>The basic unit time is the dot time, shown as ticks in the diagram. The word PARIS, which is 50 dot times including the word space, is used as the formal definition for the relationship between dot time and WPM (words per minute). Dot time in ms is 1200/WPM. So for 20 WPM the dot time is 60ms. Why 20 WPM? Because that's about as slow as you want to practice Morse code. Any slower and you'll try to break it apart, counting dots and dashes and you'll never achieve instant character recognition.</p
         <p>Relative lengths of elements:
             <li>1 - dot / dit</li>
             <li>3 - dash / dah</li>
@@ -35,8 +36,8 @@
             <li>3 - character space</li>
             <li>7 - word space</li></p>
         <p>What else should you notice about this diagram? First, the length of the characters varies in width. Sometimes even much more so than shown in this diagram. An E is only 4 dot lengths total, 1 for the dot and 3 for the character space. A 0 (zero) is 22 dot lengths in total, but this is as long as they get. To make Morse code faster, in general the more common the character, the shorter they are. The other thing you may notice is that the tone always starts on an even dot timing and ends on an odd dot timing. This creates an odd rhythm structure that only a fan of the band Rush can appreciate.</p>
-        <p>Finally there just isn't much time between the characters. At 20 WPM, there is only 180ms between the last character and the next to comprehend it. It's actually worse than that, since you only realize the current character is over once at least half that time has passed. Then you need to recognize the character near instantly, or overlap recognizing while hearing the next character, you simply can't be using any mental tricks either verbal or visual to recognize the character. There simply isn't the time or mental bandwidth to allow for it.</p>
-        <p>Farnsworth timing is a learning hack to give you more time to process the character. It stretches out the time between characters (3 dots) and words (7 dots) to give you time to comprehend the character just sent. It also is expressed in WPM and is always smaller than the character WPM. Don't allow yourself to use this extra time to use mental tricks. If you find yourself falling in this trap, use one of the repeat modes in the app to resend the character and give your brain another crack at it. Remember to increase Farnsworth speed as you learn so you can get to comprehending at full speed.</p>
+        <p>Finally there just isn't much time between the characters. At 20 WPM, there is only 180ms between the last character and the next to comprehend it. It's actually worse than that, since you only realize the current character is over once at least half that time has passed. That leaves less than a tenth of a second to recognize the character or you'll end up recognizing the last character while trying to listen to the next character. You simply can't be using any mental tricks either verbal or visual to recognize the character. There simply isn't the time or mental bandwidth to allow for it.</p>
+        <p>Farnsworth timing is a learning hack to give you more time to process the character while initially learning. It stretches out the time between characters (3 dots) and words (7 dots) to give you time to comprehend the character just sent. It also is expressed in WPM and is always smaller than the character WPM. Don't allow yourself to use this extra time to use mental tricks. If you find yourself falling in this trap, use one of the repeat modes in the app to resend the character and give your brain another crack at it. Remember to increase Farnsworth speed as you learn so you can get to comprehending at full speed.</p>
         <h3>Morse Code Table</h3>
         <p>The following Morse code table will be helpful eventually later when learning to send Morse code or occasional reference when having trouble. For example, I had trouble hearing the difference between C and Y. That final dot or dash is hard for me to distinguish and I had to see the diference to believe it. But again concentrate on the sound and not the visual form.</p>
         <table style="font-size: clamp(14px, 3.7vw, 18px); -webkit-text-size-adjust: 100%;">
@@ -173,18 +174,18 @@
             </tr>
           </tbody>
         </table>
-        <p>These 40 characters are by far the most common characters used. The other standard punctuation marks are defined by <a href="http://www.itu.int/rec/R-REC-M.1677-1-200910-I/">ITU M.1677</a> and are included in the app but will almost never be heard. What you will hear is a few of the more common prosigns. Prosigns are two letters merged together (no character space) and are shown with a line over the characters or are sometimes shown joined with &lt;&gt;. They serve utility functions such as &lt;BT&gt; break text, a sort of paragraph separator. Or &lt;HH&gt; a sort of backspace for sending errors, to tell the listener to ignore the last word or so. Other common prosigns are &lt;AR&gt; for end of message and &lt;SK&gt; for end of contact.</p>
+        <p>These 40 characters are by far the most common characters used. The other standard punctuation marks are defined by <a href="http://www.itu.int/rec/R-REC-M.1677-1-200910-I/">ITU M.1677</a> and are included in the app but will almost never be heard. What you will hear is a few of the more common prosigns. Prosigns are two letters merged together (no character space) and are shown with a line over the characters or are shown in files joined together with &lt;&gt;. They serve utility functions such as &lt;BT&gt; break text, a sort of paragraph separator. Or &lt;HH&gt; a sort of backspace for sending errors, to tell the listener to ignore the last word or so. Other common prosigns are &lt;AR&gt; for end of message and &lt;SK&gt; for end of contact.</p>
     </details>
     
     <details>
         <summary><h2 style="display: inline-block;">The App</h2></summary>
-    <p>The top of the app contains tabs to open lessons 1 to 3, select which characters to practice, manage files and general settings.</p>
+    <p>The bottom tab bar of the app contains buttons to open lessons 1 to 3, select which characters to practice, manage files and general settings.</p>
     
     <h3>Lessons</h3>
     <img src="lesson.png" width=200px>
-    <p>The top button starts the lesson as configured below.</p>
+    <p>The start button on top beigns the lesson as configured below.</p>
     <p>The first section sets the character and overall (Farnsworth) speed. Changing either of these resets the Comprehend Delay to a Farnsworth word space interval. You can tweak this delay to make it faster than a word space as you improve.</p>
-    <p>Then the next section controls the lesson format. The formats generally follow the same format that Morse Code Ninja uses. Roughly it plays the Morse code, waits for you to comprehend it (or speak the answer), shows the answer, speaks the answer (optionally) and replays the Morse code (optionally).</p>
+    <p>Thhe next section controls the lesson structure. The structure generally follow the same format that Morse Code Ninja uses. Basically it plays the Morse code, waits for you to comprehend it (or speak the answer), shows the answer, speaks the answer (optionally) and replays the Morse code (optionally).</p>
     <details>
       <summary>Detailed Lesson Flow</summary>
         <pre style="white-space: pre-wrap;"><code>
@@ -218,17 +219,15 @@ Continue to Next Example
 
 <small>For Listen, if the correct answer is supplied, it will skip the remaining steps and go to a Lesson Delay and Continue to the Next Example.
     
-For Play until Skipped, it will only reveal the answer if skip is pressed.
-
-Otherwise unless the right answer is supplied, it will jump back to the top and play the same Morse code again.
+For Play until Skipped, it will only reveal the answer if skip is pressed. Otherwise unless the right answer is supplied, it will jump back to the top and play the same Morse code again.
 
 * - Delay reduced to Farnsworth Character Space for 1 letter groups</small>
       </code></pre>
     </details>
-        <p>The final section selects what Morse code will be sent. Random characters, random call signs, QSOs (radio contacts), words from a dictionary are all available. The emphasis control allows you to concentrate on particular characters you need to improve upon. The percentage indicates what percentage of groups or words will include at least one emphasized character.</p>
+        <p>The final section selects what Morse code will be sent. Random characters, random call signs, QSOs (radio contacts), words from a dictionary are all available. The emphasis control allows you to concentrate on particular characters you need to improve upon. The percentage indicates what percentage of groups or words will include at least one emphasized character. When using a dictionary file it will show how many words match your current character set.</p>
         <h3>Character Set</h3>
         <img src="keyboard.png" width=200px>
-        <p>This is where which characters you want to practice are selected. Tapping characters will cycle them from being selected, emphasized and deselected. The A-Z and 0-9 keys either select or deselect groups of characters. The PRO key changes how 3 of the characters are shown, either as punctuation or prosigns. Use the preview option to hear the characters outside of a lesson.</p>
+        <p>This is where which characters you want to practice are selected. Tapping characters will cycle them from being selected, emphasized and deselected. The A-Z and 0-9 keys either select or deselect groups of characters. The PRO key changes how 3 of the characters are shown, either as punctuation or prosigns. Use the preview option, the play icon in the upper right, to hear the characters outside of a lesson.</p>
         
         <h3>Manage Files</h3>
         <img src="files.png" width=200px>
@@ -251,8 +250,8 @@ Otherwise unless the right answer is supplied, it will jump back to the top and 
         <summary><h2 style="display: inline-block;">Learning</h2></summary>
         <h3>Learning the characters</h3>
         <p>The standard way to learn the characters is the Koch method. Start with 2 characters at high speed (at least 20 WPM) and once you can recognize them with 90% accuracy, add another character. The problem with this is you end up doing a lot more training with the first few characters then later characters. To optimize your time, an alternative strategy is to learn a few characters at a time and add them to your learned character set.</p>
-        <p>In the app, start by selecting 3 characters, R, E, A. Train on these until you're 90% accurate. Then try them in character groups of 2 or 3 until 90% accurate.</p>
-        <p>Add T, I, N. But emphasize these characters in character set, and at 100% in the lsesson so you just train on these characters. Train on these until you're 90% accurate. Then try them in character groups of 2 or 3 until 90% accurate.</p>
+        <p>In the app, start by selecting 3 characters, R, E and A. Train on these until you're 90% accurate. Then try them in character groups of 2 or 3 until 90% accurate.</p>
+        <p>Add and then emphasize T, I and N in character set, and at 100% in the lsesson so you just train on these characters. Train on these until you're 90% accurate. Then try them in character groups of 2 or 3 until 90% accurate.</p>
         <p>Move the empahsis slider to about 50% and train again until 90% accurate.</p>
         <p>Continue adding characters as follows between inital learning and integrating them into the larger set as follows:
         <ul>
@@ -272,10 +271,10 @@ Otherwise unless the right answer is supplied, it will jump back to the top and 
         <li>0</li>
         </ul>
         <p>This order is from the Long Island CW Club. Research has shown the exact order isn't critical, feel free to rearrange these if you like.</p>
-        <p>Adjust the Comprehend time so that any characters you are slow to recognize will timeout. Never allow enough time to 'think' about the character. You need the instant recognition. Keep reducing this as you improve. B Also change the Ending to Replay so you can hear the character while thinking about it for next time.</p>
+        <p>Adjust the Comprehend time so that any characters you are slow to recognize will timeout. Never allow enough time to 'think' about the character. You need instant recognition. Keep reducing this as you improve. Also when starting, change the Ending to Replay so you can hear the character again after making a mistake.</p>
         <h3>Copying words</h3>
-        <p>Alternate between the random groups and adding more characters for more variety to your lessons once you've mastered the first dozen characters..</p>
-       <p>Choose lesson 2 or 3, set Practice to Top 5000 Words. Make the word length somewhat short, for example 2 to 4 characters. You may want to adjust the Comprehend delay to be a bit longer. Notice how you have 200 possible random words as shown on the bottom.<\p>
+        <p>Alternate between the random groups and adding more characters for more variety to your lessons once you've mastered the first dozen characters.</p>
+       <p>Choose eitehr lesson 2 or 3, set Practice to Top 5000 Words. Make the word length somewhat short, for example 2 to 4 characters. You may want to adjust the Comprehend delay to be a bit longer.<\p>
      </details>
         
     <details>
